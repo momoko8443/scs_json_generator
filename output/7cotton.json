@@ -1,0 +1,34 @@
+{
+  "orders": [
+    {
+      "order_type": "Cotton",
+      "order_number": "CPO-CP1222-001",
+      "buyer": {
+        "name": "A LIMITED11",
+        "registration_num": "HK",
+        "country_code": "HK"
+      },
+      "supplier": {
+        "name": "PPP limited11",
+        "registration_num": "HK",
+        "country_code": "HK"
+      },
+      "order_date": "2020-10-07",
+      "delivery_date": "",
+      "stage": "Cotton",
+      "lines": [
+        {
+          "line_item_number": "1",
+          "line_item_code": "CPO-LIC-CP1222-001",
+          "line_item_description": "product description",
+          "line_item_delivery_date": "2020-08-15",
+          "line_item_color": "Blue",
+          "line_item_size": "XL",
+          "line_item_quantity": "7648",
+          "line_item_uom": "pieces",
+          "brand": "Brand A"
+        }
+      ]
+    }
+  ]
+}

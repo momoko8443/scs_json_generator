@@ -1,0 +1,33 @@
+{
+  "linkages": [
+    {
+      "linkage_type": "default",
+      "linkage_entity": "default",
+      "linkage_entity_attributes": {},
+      "linkage_entries": [
+        {
+          "downstream_entity": "Garment",
+          "downstream_entity_value": "BPO-CP1222-001",
+          "downstream_entity_attributes": {
+            "line_item_number": "1",
+            "line_item_code": "BPO-LIC-CP1222-001",
+            "job_order": "BPO-CP1222-001-1",
+            "buyer_name": "Buyer of Epic"
+          },
+          "linked_entities": [
+            {
+              "upstream_entity": "Fabric",
+              "upstream_entity_value": "FPO-CP1222-001",
+              "upstream_entity_attributes": {
+                "line_item_number": "1",
+                "line_item_code": "FPO-LIC-CP1222-001",
+                "lot_number": "FPO-CP1222-001-1",
+                "buyer_name": "epic group limited11"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

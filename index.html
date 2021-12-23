@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    
+    const Ylinkage = {
+        "linkages": [{
+            "linkage_type": "default",
+            "linkage_entity": "default",
+            "linkage_entries": [{
+                "downstream_entity": "Yarn",
+                "downstream_entity_value": "1109-ypo1",
+                "downstream_entity_attributes": {
+                    "buyer_name": "N LIMITED",
+                    "line_item_number": "1",
+                    "line_item_code": "1109-ystyle1",
+                    "job_order": "1109-ypo1-1"
+                },
+                "linked_entities": [{
+                    "upstream_entity": "Cotton",
+                    "upstream_entity_value": "1109-cpo1",
+                    "upstream_entity_attributes": {
+                        "line_item_number": "1",
+                        "line_item_code": "1109-cstyle1",
+                        "lot_number": "1109-cpo1-1",
+                        "buyer_name": "A LIMITED"
+                    }
+                }]
+            }]
+        }]
+    }
+    const Cpo = {
+        "orders": [{
+            "order_type": "Cotton",
+            "order_number": "1109-cpo1",
+            "buyer": {
+                "name": "A LIMITED",
+                "registration_num": "HK",
+                "country_code": "HK"
+            },
+            "supplier": {
+                "name": "ashkjljcjsdkas",
+                "registration_num": "HK",
+                "country_code": "HK"
+            },
+            "order_date": "2020-10-07",
+            "delivery_date": "",
+            "stage": "Cotton",
+            "lines": [{
+                "line_item_number": "1",
+                "line_item_code": "1109-cstyle1",
+                "line_item_description": "product description",
+                "line_item_delivery_date": "2020-08-15",
+                "line_item_color": "Blue",
+                "line_item_size": "XL",
+                "line_item_quantity": "7648",
+                "line_item_uom": "pieces",
+                "brand": "Brand A"
+            }]
+        }]
+    }
+    const Fpo = {
+        "orders": [{
+            "order_type": "Fabric",
+            "order_number": "1109-fpo1",
+            "buyer": {
+                "name": "epic group limited",
+                "registration_num": "HK",
+                "country_code": "HK"
+            },
+            "supplier": {
+                "name": "N LIMITED",
+                "registration_num": "HK",
+                "country_code": "HK"
+            },
+            "order_date": "2020-10-07",
+            "delivery_date": "",
+            "stage": "Fabric",
+            "lines": [{
+                "line_item_number": "1",
+                "line_item_code": "1109-fstyle1",
+                "line_item_description": "product description",
+                "line_item_delivery_date": "2020-08-15",
+                "line_item_color": "Blue",
+                "line_item_size": "XL",
+                "line_item_quantity": "7648",
+                "line_item_uom": "pieces",
+                "brand": "Brand A"
+            }]
+        }]
+    }
+
+    const Bpo = {
+        "orders": [{
+            "order_type": "Garment",
+            "order_number": "1109-bpo1",
+            "buyer": {
+                "name": "Buyer of Epic",
+                "registration_num": "HK",
+                "country_code": "HK"
+            },
+            "supplier": {
+                "name": "epic group limited",
+                "registration_num": "HK",
+                "country_code": "HK"
+            },
+            "order_date": "2020-06-15",
+            "order_delivery_date": "2020-08-15",
+            "stage": "Garment",
+            "lines": [{
+                "line_item_number": "1",
+                "line_item_code": "1109-style1",
+                "line_item_description": "product description",
+                "line_item_delivery_date": "2020-08-15",
+                "line_item_color": "Blue",
+                "line_item_size": "XL",
+                "line_item_quantity": "7648",
+                "line_item_uom": "pieces",
+                "brand": "Brand A"
+            }]
+        }]
+    }
+    const Ypo = {
+        "orders": [{
+            "order_type": "Yarn",
+            "order_number": "1109-ypo1",
+            "buyer": {
+                "name": "N LIMITED",
+                "registration_num": "HK",
+                "country_code": "HK"
+            },
+            "supplier": {
+                "name": "A LIMITED",
+                "registration_num": "HK",
+                "country_code": "HK"
+            },
+            "order_date": "2020-10-07",
+            "delivery_date": "",
+            "stage": "Yarn",
+            "lines": [{
+                "line_item_number": "1",
+                "line_item_code": "1109-ystyle1",
+                "line_item_description": "product description",
+                "line_item_delivery_date": "2020-08-15",
+                "line_item_color": "Blue",
+                "line_item_size": "XL",
+                "line_item_quantity": "7648",
+                "line_item_uom": "pieces",
+                "brand": "Brand A"
+            }]
+        }]
+    }
+
+    const Flinkage = {
+        "linkages": [{
+            "linkage_type": "default",
+            "linkage_entity": "default",
+            "linkage_entries": [{
+                "downstream_entity": "Fabric",
+                "downstream_entity_value": "1109-fpo1",
+                "downstream_entity_attributes": {
+                    "buyer_name": "epic group limited",
+                    "line_item_number": "1",
+                    "line_item_code": "1109-fstyle1",
+                    "job_order": "1109-fpo1-1"
+                },
+                "linked_entities": [{
+                    "upstream_entity": "Yarn",
+                    "upstream_entity_value": "1109-ypo1",
+                    "upstream_entity_attributes": {
+                        "line_item_number": "1",
+                        "line_item_code": "1109-ystyle1",
+                        "lot_number": "1109-ypo1-1",
+                        "buyer_name": "N LIMITED"
+                    }
+                }]
+            }]
+        }]
+    }
+
+    const Blinkage = {
+        "linkages": [{
+            "linkage_type": "default",
+            "linkage_entity": "default",
+            "linkage_entity_attributes": {},
+            "linkage_entries": [{
+                "downstream_entity": "Garment",
+                "downstream_entity_value": "1109-bpo1",
+                "downstream_entity_attributes": {
+                    "line_item_number": "1",
+                    "line_item_code": "1109-style1",
+                    "job_order": "1109-bpo1-1",
+                    "buyer_name": "Buyer of Epic"
+                },
+                "linked_entities": [{
+                    "upstream_entity": "Fabric",
+                    "upstream_entity_value": "1109-fpo1",
+                    "upstream_entity_attributes": {
+                        "line_item_number": "1",
+                        "line_item_code": "1109-fstyle1",
+                        "lot_number": "1109-fpo1-1",
+                        "buyer_name": "epic group limited"
+                    }
+                }]
+            }]
+        }]
+    }
+</script>
+
+</html>
